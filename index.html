@@ -32,7 +32,6 @@
         <li><a href="#publications">Publications</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#awards">Awards</a></li>
-        <li><a href="#life-updates">Life Updates</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
@@ -50,21 +49,19 @@
 
     <div class="hero-container">
       <div class="hero-text">
-        <p class="eyebrow reveal">// computational biology · AI · virology</p>
+        <p class="eyebrow reveal">Computational biology · Machine Learning. Artificial Intelligence </p>
 
         <h1 class="reveal">
           Kritika<br><span class="grad">Prasai</span>
         </h1>
 
         <h2 class="hero-role reveal">
-          Ph.D. Researcher in Computer Science
-          <span>University of Missouri&nbsp;—&nbsp;Columbia</span>
+          Ph.D. Student in Computer Science
+          <span>University of Missouri (Mizzou);Columbia</span>
         </h2>
 
         <p class="hero-blurb reveal">
-          I build AI systems that learn from sparse, messy biological data — modeling
-          protein interactions, viral evolution, and antigenic escape to help predict
-          and contain infectious disease.
+          My research focuses on developing machine learning methods that learn from large-scale biological data and limited experimental observations to model protein interactions, viral evolution, and antigenic escape, with the goal of improving infectious disease prediction, surveillance, and intervention.
         </p>
 
         <div class="hero-actions reveal">
@@ -74,16 +71,16 @@
 
         <div class="social-links reveal">
           <a href="https://www.linkedin.com/in/kritikaprasai397" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a>
-          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://scholar.google.com/citations?user=Zjkmvk8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://github.com/kritikaprasai" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
 
       <div class="hero-image reveal">
         <div class="portrait-frame">
           <!-- Replace profile.jpg with your photo. Keep the file in the same folder. -->
-          <img src="./images/Headshot_Profile.jpg" alt="Kritika Prasai"
-               onerror="this.classList.add('img-missing'); this.alt='Add Headshot_Profile.jpg';" />
+          <img src="./images/profile.jpg" alt="Kritika Prasai"
+               onerror="this.classList.add('img-missing'); this.alt='Add profile.jpg';" />
           <span class="portrait-badge">Mizzou · CS</span>
         </div>
         <div class="orbit-ring" aria-hidden="true"></div>
@@ -120,42 +117,39 @@
   <section id="about" class="section">
     <div class="section-head reveal">
       <p class="kicker">01 — About</p>
-      <h2>Teaching machines to reason about life</h2>
+      <h2>Interpretable Machine Learning for Biological Systems</h2>
     </div>
 
     <div class="about-grid">
       <div class="about-lead reveal">
         <p>
-          I'm a Ph.D. researcher in Computer Science at the University of Missouri-Columbia,
-          advised by Dr. Xiu-Feng Wan. My work sits at the intersection of
+          I'm a Ph.D. student in Computer Science at the University of Missouri-Columbia. My work sits at the intersection of
           <strong>artificial intelligence</strong> and <strong>computational biology</strong>,
-          where I develop systems that make predictions and decisions in complex, data-sparse
-          biological environments.
+          where I develop AI systems that learn from complex, sparse, and large-scale
+          biological data.
         </p>
         <p>
-          I focus on protein interaction prediction, viral evolution, antigenic escape,
-          vaccine effectiveness, and infectious disease modeling — using deep learning,
-          protein language models, graph neural networks, and scalable bioinformatics
-          pipelines to turn biological signal into actionable insight.
+          My research focuses on protein interaction prediction, viral evolution,
+          antigenic escape, vaccine effectiveness, and infectious disease modeling.
+          I use deep learning, protein language models, foundational models, and
+          scalable bioinformatics pipelines to transform biological data into
+          predictive insight for infectious disease surveillance and intervention.
         </p>
       </div>
+    </div>
 
       <ul class="about-stats reveal">
         <li>
-          <span class="stat-num" data-count="5">0</span>
+          <span class="stat-num" data-count="4">0</span>
           <span class="stat-label">Peer-reviewed papers</span>
         </li>
         <li>
-          <span class="stat-num" data-count="4" data-suffix=".0">0</span>
-          <span class="stat-label">Graduate GPA</span>
-        </li>
-        <li>
-          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-num" data-count="4">0</span>
           <span class="stat-label">Leadership roles</span>
         </li>
         <li>
           <span class="stat-num" data-count="2022">0</span>
-          <span class="stat-label">At Mizzou since</span>
+          <span class="stat-label">Phd Student in Mizzou since</span>
         </li>
       </ul>
     </div>
@@ -167,18 +161,22 @@
       <p class="kicker kicker-light">02 — Research</p>
       <h2>Highlighted work</h2>
       <p class="section-sub">
-        Three threads running through my research — each pairing a hard biological
-        question with a tailored machine-learning method.
+        A selection of research projects that showcase my work at the intersection of
+        AI and computational biology.
       </p>
     </div>
 
     <div class="research-grid">
 
       <article class="research-card reveal">
-        <div class="research-media" data-placeholder="Add figure — e.g. cross-attention diagram"></div>
+        <div class="research-media">
+          <img src="images/model_architecture.png"
+              alt="Protein Binding Prediction Model"
+              class="research-img">
+        </div>       
         <div class="research-body">
           <p class="tag">Deep Learning · PLMs</p>
-          <h3>Protein Binding Prediction</h3>
+          <h3>Compat Net: Interaction aware protein compatibility prediction model</h3>
           <p>
             A multi-task deep learning framework using protein language models and
             transformer-based gated cross-attention to model viral–host protein interactions.
@@ -187,10 +185,14 @@
       </article>
 
       <article class="research-card reveal">
-        <div class="research-media" data-placeholder="Add figure — e.g. mutation graph / GNN"></div>
+        <div class="research-media">
+          <img src="images/epistasis_model_architecture.png"
+              alt="Epistasis aware neutralization titer prediction model"
+              class="research-img">
+        </div>
         <div class="research-body">
           <p class="tag">Graph Neural Networks</p>
-          <h3>Antigenic Escape Modeling</h3>
+          <h3>Epistasis aware neutralization titer prediction model</h3>
           <p>
             Graph neural network models that capture epistatic mutation effects underlying
             influenza antigenic evolution and immune escape.
@@ -199,7 +201,12 @@
       </article>
 
       <article class="research-card reveal">
-        <div class="research-media" data-placeholder="Add figure — e.g. entropy / antigenic map"></div>
+        <div class="research-media"></div>
+          <div class="research-media">
+          <img src="images/Figure1_GraphicOverview.png"
+              alt="Diversity and antigenic evolution of H3N2 influenza viruses"
+              class="research-img">
+        </div>
         <div class="research-body">
           <p class="tag">Genomics · Vaccines</p>
           <h3>Viral Genomics &amp; Vaccines</h3>
@@ -340,7 +347,6 @@
           <p class="tl-period">Aug 2022 – Present</p>
           <h3>Ph.D. in Computer Science</h3>
           <p class="tl-org">University of Missouri-Columbia</p>
-          <p>Advisor: Dr. Xiu-Feng Wan · GPA 4.0 / 4.0</p>
         </div>
 
         <div class="tl-item reveal">
@@ -348,7 +354,6 @@
           <p class="tl-period">2015 – 2020</p>
           <h3>B.E. in Computer Engineering</h3>
           <p class="tl-org">Tribhuvan University, Nepal</p>
-          <p>GPA 3.5 / 4.0</p>
         </div>
       </div>
 
@@ -386,18 +391,18 @@
       </div>
 
       <div class="entry reveal">
-        <div class="entry-year">2024</div>
+        <div class="entry-year">2025</div>
         <div class="entry-body">
-          <h3>Vice Secretary, MUNSA</h3>
-          <p class="entry-org">Missouri University Nepali Student Association · 2024–2025</p>
+          <h3>Vice President, MUNSA</h3>
+          <p class="entry-org">Missouri University Nepali Student Association · 2025–2026</p>
         </div>
       </div>
 
       <div class="entry reveal">
         <div class="entry-year">2024</div>
         <div class="entry-body">
-          <h3>Department Representative, Graduate Professional Council</h3>
-          <p class="entry-org">University of Missouri · 2024–Present</p>
+          <h3>EECSDepartment Representative, Graduate Professional Council (GPC)</h3>
+          <p class="entry-org">University of Missouri · 2025–2026</p>
           <p>
             Represented the EECS department and contributed to student affairs initiatives
             supporting graduate student mental health and well-being.
@@ -418,9 +423,7 @@
   <div class="award-grid">
 
       <div class="award-card-with-image">
-        <div class="award-media">
-          <img src="./images/Outstanding_Phd_student_award.jpg" alt="Outstanding PhD Student Award ceremony" />
-        </div>
+        <div class="award-media" data-placeholder="Add award photo"></div>
         <div class="award-card">
           <p class="award-year">2026</p>
           <h3>Outstanding PhD Student Award</h3>
@@ -430,7 +433,7 @@
       </div>
 
       <div class="award-card-with-image">
-        <div class="award-media" data-placeholder="Add interdisciplinary competition photo"></div>
+        <div class="award-media" data-placeholder="Add award photo"></div>
         <div class="award-card">
           <p class="award-year">2024</p>
           <h3>Interdisciplinary Case Competition Winner</h3>
@@ -440,9 +443,7 @@
       </div>
 
       <div class="award-card-with-image">
-        <div class="award-media">
-          <img src="./images/RisingStars_Conference_Presentation.jpg" alt="Rising Stars Workshop presentation" />
-        </div>
+        <div class="award-media" data-placeholder="Add conference talk photo"></div>
         <div class="award-card">
           <p class="award-year">2026</p>
           <h3>Rising Stars in Computational &amp; Data Sciences</h3>
@@ -484,85 +485,40 @@
     </div>
   </section>
 
-  <!-- ============ LIFE UPDATES ============ -->
-  <section id="life-updates" class="section section-dark">
+  <!-- ============ NEWS ============ -->
+  <section id="news" class="section section-dark">
     <div class="section-head reveal">
-      <p class="kicker kicker-light">08 — Life Updates</p>
-      <h2>Conferences, talks &amp; moments</h2>
-      <p class="section-sub">Highlights from research conferences, presentations, and professional milestones.</p>
+      <p class="kicker kicker-light">08 — News</p>
+      <h2>Recent updates</h2>
+      <p class="section-sub">Add your own moments here — talks, papers, travel, lab events.</p>
     </div>
 
-    <div class="life-updates-grid">
+    <div class="news-grid">
 
-      <article class="life-card reveal">
-        <div class="life-card-image">
-          <img src="./images/ASV_Conference.jpg" alt="ASV 2024 Conference" loading="lazy" />
-          <span class="life-card-tag">2024</span>
-        </div>
-        <div class="life-card-body">
-          <h3>ASV 2024 Oral Presentation</h3>
-          <p class="life-card-venue">American Society of Virology</p>
-          <p>Differential expression analysis of innate immune responses in viral infections.</p>
+      <article class="news-card reveal">
+        <div class="news-media" data-placeholder="Add photo"></div>
+        <div class="news-body">
+          <p class="news-date">2026</p>
+          <h3>Outstanding PhD Student Award</h3>
+          <p>Recognized by the EECS department at the University of Missouri.</p>
         </div>
       </article>
 
-      <article class="life-card reveal">
-        <div class="life-card-image">
-          <img src="./images/Epidemics_conference_1.jpg" alt="Epidemics 2025 Conference" loading="lazy" />
-          <span class="life-card-tag">2025</span>
-        </div>
-        <div class="life-card-body">
-          <h3>Epidemics 2025 Poster</h3>
-          <p class="life-card-venue">Epidemics Conference 2025</p>
-          <p>Intrahost polymorphisms and antigenic adaptation in H3N2 influenza viruses.</p>
-        </div>
-      </article>
-
-      <article class="life-card reveal">
-        <div class="life-card-image">
-          <img src="./images/Epidemics_conference_poster.jpg" alt="Epidemics Poster Presentation" loading="lazy" />
-          <span class="life-card-tag">2025</span>
-        </div>
-        <div class="life-card-body">
-          <h3>Conference Poster</h3>
-          <p class="life-card-venue">Epidemics 2025</p>
-          <p>Research findings presented at major international virology conference.</p>
-        </div>
-      </article>
-
-      <article class="life-card reveal">
-        <div class="life-card-image">
-          <img src="./images/EECS_President.jpg" alt="EECS GSA President" loading="lazy" />
-          <span class="life-card-tag">2025</span>
-        </div>
-        <div class="life-card-body">
-          <h3>EECS GSA President</h3>
-          <p class="life-card-venue">University of Missouri</p>
-          <p>Leading graduate student initiatives and organizing department events.</p>
-        </div>
-      </article>
-
-      <article class="life-card reveal">
-        <div class="life-card-image">
-          <img src="./images/RisingStars_Conference_Presentation.jpg" alt="Rising Stars Workshop" loading="lazy" />
-          <span class="life-card-tag">2026</span>
-        </div>
-        <div class="life-card-body">
+      <article class="news-card reveal">
+        <div class="news-media" data-placeholder="Add photo"></div>
+        <div class="news-body">
+          <p class="news-date">2026</p>
           <h3>Rising Stars Workshop</h3>
-          <p class="life-card-venue">Santa Fe Institute</p>
-          <p>Selected for research talk highlighting work in computational biology.</p>
+          <p>Selected for a research talk at the Santa Fe Institute.</p>
         </div>
       </article>
 
-      <article class="life-card reveal">
-        <div class="life-card-image">
-          <img src="./images/Outstanding_Phd_student_award.jpg" alt="PhD Student Award" loading="lazy" />
-          <span class="life-card-tag">2026</span>
-        </div>
-        <div class="life-card-body">
-          <h3>Outstanding PhD Award</h3>
-          <p class="life-card-venue">EECS Department</p>
-          <p>Recognition for research excellence and contributions to the department.</p>
+      <article class="news-card reveal">
+        <div class="news-media" data-placeholder="Add photo"></div>
+        <div class="news-body">
+          <p class="news-date">2025</p>
+          <h3>Epidemics 2025</h3>
+          <p>Presented a poster on H3N2 intrahost polymorphisms and antigenic adaptation.</p>
         </div>
       </article>
 
@@ -589,10 +545,6 @@
             <span class="contact-label">LinkedIn</span>
             <span class="contact-value">kritikaprasai397</span>
           </a>
-          <div class="contact-row">
-            <span class="contact-label">Location</span>
-            <span class="contact-value">Columbia, Missouri, USA</span>
-          </div>
         </div>
       </div>
     </div>
